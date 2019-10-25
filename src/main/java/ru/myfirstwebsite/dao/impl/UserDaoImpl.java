@@ -103,12 +103,12 @@ public class UserDaoImpl implements UserDao {
 
     @Override
     public Long findUserIdByEmail(String email) {
-        final String getByUserNameQuery = "select usr.id from usr where email = :email";
+        final String getByUserEmailQuery = "select usr.id from usr where email = :email";
 
         MapSqlParameterSource params = new MapSqlParameterSource();
         params.addValue("email", email);
 
-        List<Long> userIdList = namedParameterJdbcTemplate.query(getByUserNameQuery, params, new RowMapper() {
+        List<Long> userIdList = namedParameterJdbcTemplate.query(getByUserEmailQuery, params, new RowMapper() {
             public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
                 return rs.getLong(1);
             }

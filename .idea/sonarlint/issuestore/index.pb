@@ -99,3 +99,5 @@ m
 =src/main/java/ru/myfirstwebsite/config/WebAppInitializer.java,3\f\3fb50b54aca30988e62e17278fe6eaf1d8f2fa75
 j
 :src/main/java/ru/myfirstwebsite/config/DatabaseConfig.java,0\1\01aa38b591aa4932570bd84a35ddf569e04c1f96
+9
+	gitignore,6\f\6f819b366cb83f2e62d7b8b23b65c2e28c01306a

@@ -50,7 +50,7 @@ create table tour
   data timestamp,
   duration integer,
   description varchar(2048),
-  cost integer,
+  cost varchar(255),
   tour_type varchar(255),
   hotel_id bigint not null
     constraint tour_hotel_fk
